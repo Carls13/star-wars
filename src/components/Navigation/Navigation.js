@@ -1,0 +1,29 @@
+import React from 'react';
+import myAvatar from './myAvatar.svg';
+
+const Navigation = ({ changeRoute }) => {
+	return (
+		  <nav className="db dt-l w-100 border-box pa3 ph5-l">
+			  <p className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l">
+			    <img src={myAvatar} className="dib w2 h2 br-100" alt="Carlos Hernandez"/>
+			  </p>
+			  <p className="yellow">STAR WARS</p>
+		  <div className="db dtc-l yellow v-mid w-100 w-75-l tc tr-l">
+		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('home')} >Home</p>
+		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('characters')} >Characters</p>
+		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('planets')} >Planets</p>
+		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('movies')} >Movies</p>
+		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('about')} >About</p>
+		  </div>
+		  {/*<nav class="bt bb tc mw7 center mt3 pointer">
+		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('home')} >Home</p>
+		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('characters')} >Characters</p>
+		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('planets')} >Planets</p>
+		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('movies')} >Movies</p>
+		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('about')} >About</p>
+		  </nav>*/}
+		</nav>
+		)
+}
+
+export default Navigation;
