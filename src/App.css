@@ -8,8 +8,33 @@
 }
 
 .center {
-  dislay: flex;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  margin-right: auto;
+}
+
+.navcard{
+  display: flex;flex: 1 0 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  margin-right: 5px;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.cardlist{
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.film {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .App-header {

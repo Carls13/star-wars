@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
 	return (
-		<footer style={{background: "transparent url('http://i.giphy.com/5lF3pQpdquCBy.gif')"}} className="tc-l bg-center cover bg-black">
+		<footer className="tc-l bg-center cover bg-black">
 		  <div className="w-100 ph3 pv5 bg-black-80 center">
 			  <h1 className="tracked white">Follow me:</h1>
 		    <a target="_blank" className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://www.facebook.com/TheCarlosSamuel" title="Facebook">
@@ -25,15 +25,15 @@ const Footer = () => {
 		      <svg className="dib h2 w2" fill="yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
 		      <span className="f6 yellow ml3 pr2">LinkedIn</span>
 		    </a>*/}
-		    <a target="_blank" className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://twitter.com/OneMoreCarlos" title="Twitter">
+		    <a target="_blank" className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://twitter.com/Carlosshb13" title="Twitter">
 		      <svg className="dib h2 w2" fill="yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z" fill-rule="nonzero"/></svg>
 		      <span className="f6 yellow ml3 pr2">Twitter</span>
 		    </a>
 		    <div className='mt3'>   
-			    <a target="_blank" href="mailto:charlesshb98@gmail.com" className="link yellow b f6 f2-ns dim black-70 lh-solid">charlesshb98@gmail.com</a>
+			    <a target="_blank" href="mailto:devcarlosshb98@gmail.com" className="link yellow b f6 f2-ns dim black-70 lh-solid">devcarlosshb98@gmail.com</a>
 		  	</div>
 		  	<div className='mt5'>   
-	  			<p className="f3 mt100 white db b lh-solid">© 2018. Carlos Hernández. With the usage of <strong className="yellow">SWAPI</strong> API. All rights reserved.</p>
+	  			<p className="f3 mt100 white db b lh-solid">© 2019. Carlos Hernández. With the usage of <strong className="yellow">SWAPI</strong> API. All rights reserved.</p>
 		  	</div>
 
 		  </div>

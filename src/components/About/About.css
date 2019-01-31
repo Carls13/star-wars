@@ -1,18 +1,9 @@
-
-
-.cf {
-    
-    background: url(https://carls13.github.io/mypage/img/cover.JPG) no-repeat center center fixed;
-    background-size: cover;
-    background-position: right;
+.main{
+    background-image: url('https://carls13.github.io/mypage/img/cover.JPG')
+}
+a {
+	text-decoration: none;
+	color: yellow;
 }
 
-a{
-    color: yellow;
-    text-decoration: none;
-}
-
-.portfolio{
-    text-align: center;
-}
 
