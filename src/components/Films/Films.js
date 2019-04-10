@@ -1,41 +1,30 @@
 import React, { Component } from 'react';
 
 import Film from './../Film/Film';
-import { connect } from 'react-redux';
-import { requestFilms } from './../../actions.js';
-
-const mapStateToProps = state =>{
-	console.log(state)
-		// return {
-		// 	films: state.requestFilms.films,
-		// 	isPending: state.requestFilms.isFilmsPending,
-		// 	error: state.requestFilms.filmsError
-		// };
-}
-
-const mapDispatchToProps = (dispatch) =>{
-	return {
-		onRequestFilms: () => dispatch(requestFilms())
-		};
-	}
+import Loader from './../Loader/Loader';
 
 
 class Films extends Component {
 	constructor(){
 		super()
+		this.state = {
+			films: []
+		}
 	}
 
 	componentDidMount(){
-		this.props.onRequestFilms()
+		fetch('https://swapi.co/api/films/')
+      .then(response=> response.json())
+      .then(data => {
+      	this.setState({ films: data.results})
+      });
 	}
 
 
       
 	render() {
-		const { films, isPending } = this.props;
-
 		
-	    	const filmsList = films.map((film) =>{
+	    	const filmsList = this.state.films.map((film) =>{
 				return (<div className="bt bb b--yellow film">
 							<Film film={{film}} 
 							openModal={this.props.openModal} 
@@ -45,9 +34,9 @@ class Films extends Component {
 						);
 			})
 			
-		return isPending ?
-			 <h1>Loading...</h1> :	
-		{ filmsList }
+		return !this.state.films.length ?
+			 <Loader/> :	
+		 filmsList 
 }
 }
-export default connect(mapDispatchToProps, mapStateToProps)(Films);
+export default Films;

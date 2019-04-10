@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+.card-image{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -17,18 +23,15 @@
 }
 
 .navcard{
-  display: flex;flex: 1 0 0%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column;
   margin-right: 5px;
   margin-bottom: 0;
   margin-left: 5px;
+  align-items: center;
 }
 
 .cardlist{
-  display: flex;
-  flex-flow: row wrap;
   margin-right: -15px;
   margin-left: -15px;
 }

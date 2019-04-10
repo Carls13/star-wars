@@ -1,5 +1,4 @@
 import React from 'react';
-import myAvatar from './myAvatar.svg';
 import swLogo from './SWLogo.png';
 
 const Navigation = ({ changeRoute }) => {
@@ -15,13 +14,7 @@ const Navigation = ({ changeRoute }) => {
 		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('films')} >Films</p>
 		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('about')} >About</p>
 		  </div>
-		  {/*<nav class="bt bb tc mw7 center mt3 pointer">
-		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('home')} >Home</p>
-		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('characters')} >Characters</p>
-		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('planets')} >Planets</p>
-		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('movies')} >Movies</p>
-		    <p class="f4 tracked white f4-l link bg-animate black-80 hover-black hover-bg-yellow dib pa3 ph4-l" onClick={() => changeRoute('about')} >About</p>
-		  </nav>*/}
+		  
 		</nav>
 		)
 }

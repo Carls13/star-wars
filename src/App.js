@@ -4,8 +4,8 @@ import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Home from './components/Home/Home';
 import Films from './components/Films/Films';
-import { connect } from 'react-redux';
-import { requestFilms } from './actions.js';
+import Characters from './components/Characters/Characters';
+import Planets from './components/Planets/Planets';
 import './App.css'
 
 
@@ -25,14 +25,12 @@ class App extends Component {
   }
 
   openModal = () =>  {
-    console.log(this.state.visible)
     this.setState({visible : true});
   }
 
  componentDidMount(){
     }
   closeModal = () => {
-    console.log(this.state.visible)
     this.setState({visible : false});
     }
 
@@ -50,15 +48,13 @@ class App extends Component {
         changeRoute={this.changeRoute} />
       break;
     case 'characters':
-      body = <h1 className='yellow'>Characters</h1>;
+      body = <Characters/>;
       break;
     case 'planets':
-      body = <h1 className='yellow'>planets</h1>;
+      body = <Planets/>;
       break;
     case 'films':
-      const { films, isFilmsPending } = this.props;
       body = <Films 
-        //films={films} 
         openModal={this.openModal} 
         closeModal={this.closeModal}
         isVisible={this.state.visible}
@@ -74,22 +70,11 @@ class App extends Component {
     return (
       <div className='App'>
         <Navigation changeRoute={this.changeRoute} />
-        {body}
-        {/*<Scroll>
-        </Scroll>*/}
-
-        
-          {/*<div>
-           <SearchBox/>
-            <Characters/>
-            <Films/>
-            <Planets/>
-          </div>
-*/}        
+        {body}       
         <Footer/>  
       </div>
     );
   }
 }
-export default connect()(App);
+export default App;
 

@@ -18,11 +18,11 @@ const romanize = (num) => {
 }
 
     return (
-      <article className="baskerville pb5">
-  <header className="avenir tc-l ph3 ph4-ns pt4 pt5-ns">
+      <article className="pb5">
+  <header className="tc-l ph3 ph4-ns pt4 pt5-ns">
     <h1 className="f3 f2-m f-subheadline-l yellow measure lh-title fw1 mt0">
     {`Episode ${romanize(film.film.episode_id)}: ${film.film.title}`}</h1>
-    <h1 className="f5 yellow f4-l db fw1 baskerville mb4">
+    <h1 className="f5 yellow f4-l db fw1 mb4">
       {`Release date: ${film.film.release_date}`}
     </h1>
   </header>
